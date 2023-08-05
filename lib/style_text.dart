@@ -1,14 +1,17 @@
 import 'package:flutter/material.dart';
 
-class StyledText extends StatelessWidget{
+class StyledText extends StatelessWidget {
+   const StyledText(this.text, {super.key});
 
-   const StyledText({super.key});
+  final String text;
   @override
   Widget build(context) {
-    return const Text('Hello Worldooo', style: TextStyle(
-              color: Colors.white,
-              fontSize: 28,
-            ),
+    return  Text(
+      text,
+      style: const TextStyle(
+        color: Colors.white,
+        fontSize: 28,
+      ),
     );
   }
 }
