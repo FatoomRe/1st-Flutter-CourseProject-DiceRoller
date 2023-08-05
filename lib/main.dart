@@ -5,7 +5,10 @@ void main() {
   runApp(
      const MaterialApp(
       home: Scaffold(
-        body: GradientContainer(), //see the widget class from gradient_container.dart
+        body: GradientContainer(
+          Color(0xff9c27b0),
+          Color(0xfff44336)
+          ),
         ),
       ),
     );

@@ -6,18 +6,18 @@ const endAlignement = Alignment.bottomLeft;
 
 class GradientContainer extends StatelessWidget {
   
-  //const GradientContainer({key}): super(key: key);
-  const GradientContainer({super.key}); //this is a short code for the previos line of code
+  const GradientContainer(this.color1, this.color2, {super.key}); 
+  
+  final Color color1;
+  final Color color2;
+
   @override
   Widget build(context) {
     return Container(
-          decoration: const BoxDecoration(
+          decoration: BoxDecoration(
             gradient: LinearGradient(
-          colors: [
-            Color(0xff9c27b0),
-            Color(0xfff44336)
-            ],
-          stops: [0, 1],
+          colors: [color1, color2],
+          stops:  const [0, 1],
           begin: startAlignement,
           end: endAlignement,
         )
@@ -28,3 +28,28 @@ class GradientContainer extends StatelessWidget {
         );
   }
 }
+
+
+// class GradientContainer extends StatelessWidget {
+  
+//   const GradientContainer(this.colors, {super.key}); 
+  
+//   final List<Color> colors;
+
+//   @override
+//   Widget build(context) {
+//     return Container(
+//           decoration:  BoxDecoration(
+//             gradient: LinearGradient(
+//           colors: colors,
+//           stops: const [0, 1],
+//           begin: startAlignement,
+//           end: endAlignement,
+//         )
+//           ),
+//           child: const Center(
+//             child: StyledText('Hello Worldooo'),
+//           ),
+//         );
+//   }
+// }
