@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 
+import 'dice_roller.dart';
+
 const startAlignement = Alignment.topRight;
 const endAlignement = Alignment.bottomLeft;
 
@@ -12,7 +14,7 @@ class GradientContainer extends StatelessWidget {
 
   final Color color1;
   final Color color2;
-  
+
   @override
   Widget build(context) {
     return Container(
@@ -24,7 +26,7 @@ class GradientContainer extends StatelessWidget {
         end: endAlignement,
       )),
       child: Center(
-         
+         child: DiceRoller(),
       ),
     );
   }
