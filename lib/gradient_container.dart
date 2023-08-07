@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-import 'dice_roller.dart';
+import 'package:firstcourseapp/dice_roller.dart';
 
 const startAlignement = Alignment.topRight;
 const endAlignement = Alignment.bottomLeft;
