@@ -25,7 +25,7 @@ class GradientContainer extends StatelessWidget {
         begin: startAlignement,
         end: endAlignement,
       )),
-      child: Center(
+      child: const Center(
          child: DiceRoller(),
       ),
     );
